@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity implements VerifyCallBack, OnSend
                     getMyApp().startCountDown();
                     btn.setSelected(true);
 
-                    SMSSDK.getVerificationCode("86", "15504047374");
+                    SMSSDK.getVerificationCode("86", "your telephone"); // 5 times per day
                 }
             }
         });
@@ -47,7 +47,7 @@ public class MainActivity extends BaseActivity implements VerifyCallBack, OnSend
             @Override
             public void onClick(View v) {
 //                if(!submit.isSelected())
-                SMSSDK.submitVerificationCode("86", "15504047374", ed.getText().toString() );
+                SMSSDK.submitVerificationCode("86", "your telephone", ed.getText().toString() );
             }
         });
 
