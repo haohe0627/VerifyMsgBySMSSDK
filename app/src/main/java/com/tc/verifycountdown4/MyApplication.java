@@ -30,7 +30,7 @@ public class MyApplication extends Application {
     }
 
     private void init(){
-        MobSDK.init(this, "1f03515128a5a", "92ac048d09323c6f38597dea442467ad");
+        MobSDK.init(this, "key", "id");
     }
 
     public void startCountDown(){
