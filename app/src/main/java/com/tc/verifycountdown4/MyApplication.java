@@ -15,7 +15,7 @@ import cn.smssdk.SMSSDK;
 
 public class MyApplication extends Application {
 
-    private int countDownNo = 10;
+    private int countDownNo = 30;
     private Timer timer;
     private VerifyCallBack callBack;
 
@@ -44,7 +44,7 @@ public class MyApplication extends Application {
                     callBack.CountingDown(countDownNo);
 
                     if(countDownNo == 0){
-                        countDownNo = 10;
+                        countDownNo = 30;
                         callBack.CountDownComplete();
                         timer.cancel();
                         timer = null;
@@ -57,6 +57,6 @@ public class MyApplication extends Application {
     }
 
     public boolean isCountingDown(){
-        return countDownNo != 10;
+        return countDownNo != 30;
     }
 }
